@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<head>
+    <title>Print Names after Submission</title>
+</head>
+<body>
+  <form method="POST">
+  {% csrf_token %}
+  <div style="display:flex;align-items:center;justify-content:center; min-height:100vh; background:linear-gradient(135deg,#0f172a,#071027); color:#e6eef8; font-family:system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Neue',Arial; padding:2rem">
+  <input type="text" name="name" placeholder="Enter your name"><br>
+
+  <button type="submit" value="Submit">Submit</button>
+  </div>
+</form>
+</body>
+</html>

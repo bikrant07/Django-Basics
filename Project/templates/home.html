@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home</title>
+</head>
+<body>
+    <h1>Welcome to the Home Page</h1>
+    <p>This is the home page of the Django project.</p>
+    <p>Use the navigation links to explore different features of the project.</p>
+    <ul>
+        <li><a href="{% url 'showTime' %}">Show Current Time</a></li>
+        <li><a href="{% url 'printName' %}">Input and Print Name</a></li>
+        <li><a href="{% url 'userList' %}">View User List</a></li>
+    </ul>
+</body>
+</html> 

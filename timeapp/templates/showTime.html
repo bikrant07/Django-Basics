@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Show Time</title>
+        <style>
+            :root{--accent:#16a34a;--muted:#94a3b8}
+            *{box-sizing:border-box}
+            body{margin:0;min-height:100vh;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,#0f172a,#071027);color:#e6eef8;font-family:system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Neue',Arial;padding:2rem}
+            .card{background:rgba(255,255,255,0.03);border-radius:12px;padding:1.25rem 1.75rem;text-align:center;box-shadow:0 8px 24px rgba(2,6,23,0.6);border:1px solid rgba(255,255,255,0.04);max-width:720px;width:100%}
+            h1{margin:0;font-size:1.25rem}
+            p.time{margin:0;margin-top:.6rem;font-size:1.6rem;color:var(--accent);font-weight:600}
+            .small{color:var(--muted);font-size:.9rem;margin-top:.5rem}
+            @media (max-width:480px){p.time{font-size:1.1rem}}
+        </style>
+    </head>
+    <body>
+        <div class="card">
+            <h1>Current Date and Time</h1>
+            <p class="time">{{ current_time }}</p>
+        </div>
+    </body>
+</html>
