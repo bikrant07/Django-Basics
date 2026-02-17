@@ -36,8 +36,6 @@ This repository contains simple beginner Django projects that demonstrate basic 
 
 ---
 
-## 🧠 What I Learned
-
 From these mini projects I learned:
 
 * How Django views work
@@ -48,7 +46,7 @@ From these mini projects I learned:
 
 ---
 
-## How to Run Project
+## Run Project: 
 
 ```bash
 python manage.py runserver
