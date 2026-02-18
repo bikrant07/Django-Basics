@@ -1,50 +1,28 @@
-# Django Mini Projects
+# Django Practice Projects
 
-This repository contains simple beginner Django projects that demonstrate basic backend concepts. These projects helped me understand how Django handles requests, forms, and JSON responses.
+I’ve been learning Django by building small hands-on projects. These mini projects helps me understand how backend logic actually works.
 
+## What I built
 
-## Projects Included
+* **Time page** – Displays the current server time (basic view logic)
+* **Form submission page** – Takes user input and shows it after submit (POST handling)
+* **JSON endpoint** – Returns a list of users in JSON format
+* **Dynamic URLs** – Routes like `/greet/Bikrant/` or `/square/5/`
+* **Database integration** – Created models, stored data, fetched data from the database, and displayed it on a page (e.g., `/product/101/`)
 
-### 1️. Time Page (Basic View Logic)
-
-* Displays the current server time.
-* Shows how a Django view works.
-* Demonstrates returning a simple HTTP response.
-
----
-
-### 2. Form Submission (POST Handling)
-
-* A simple form where user enters their name.
-* After submitting, the page displays the entered name.
-* Demonstrates:
-
-  * POST requests
-  * Form handling
-  * Passing data to templates
-
----
-
-### 3. JSON API Endpoint (Data Response)
-
-* Returns a list of users in JSON format.
-* Demonstrates:
-
-  * API-style response
-  * JsonResponse
-  * Backend data formatting
-
----
-
-From these mini projects I learned:
+## What I learned
 
 * How Django views work
 * Difference between GET and POST
-* How data flows from browser → server → browser
+* Request → URL → View → Response flow
 * How to return JSON responses
-* Basic request handling
+* How to handle forms
+* How dynamic routing works
+* How to create models and run migrations
+* How to fetch data from the database using Django ORM and display it
 
----
+Still learning and improving .......
+
 
 ## Run Project: 
 
