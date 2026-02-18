@@ -39,7 +39,8 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     "timeapp",
     "nameapp",
-    "jsonlist"
+    "jsonlist",
+    "productapp",
 ]
 
 MIDDLEWARE = [
