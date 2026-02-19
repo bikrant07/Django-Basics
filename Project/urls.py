@@ -26,5 +26,5 @@ urlpatterns = [
     path("time/",include("timeapp.urls")),
     path("square/<int:num>/",views.findSquare, name="findSquare"),
     path("greet/<str:name>/",views.greetUser, name="greetUser"),
-    path("product/<int:id>/",include("productapp.urls")),
+    path("product/",include("productapp.urls")),
 ]

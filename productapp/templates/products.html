@@ -22,11 +22,14 @@
   </head>
   <body style="background-image: linear-gradient(to right, beige, grey)">
     <div class="container">
+      <p>Total Count:{{products}}
+      {% comment %} {% for product in products %} 
       <div class="card">
-        <h1>Product Details</h1>
-        <p>Product Name: {{ product.name }}</p>
+        <h3>{{forloop.counter}}.</h3>
+        <p>Name: <b>{{ product.name }}</b></p>
         <p>Price: Rs. {{ product.price }}</p>
       </div>
+      {% endfor %} {% endcomment %}
     </div>
   </body>
-</html>
+</html> 
