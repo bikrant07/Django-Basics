@@ -1,0 +1,39 @@
+<DOCTYPE html>
+<html>
+    <head>
+        <title>Add Product</title>
+    </head>
+    <style>
+        .container{
+            height:100vh;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            flex-direction:column;
+            background-image:linear-gradient(to right,beige,grey);
+        }
+
+        .card{
+            height:100px;
+            width:550px;
+            padding:10px;
+            border-radius:10px;
+            box-shadow:0 4px 8px rgba(0,0,0,0.2);
+            background-color:white;
+            text-align:center;
+        }
+    </style>
+    <body>
+    <div class="container">
+        <h1>Add a New Product</h1>
+        <div class="card">
+        <form method="post">
+            {% csrf_token %}
+            {{form}}
+            <br><br>
+            <button type="submit">Add Product<button>
+        </div>
+        </form>
+    </div>
+    </body>         
+</html>

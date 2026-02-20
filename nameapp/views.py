@@ -1,13 +1,16 @@
 from django.shortcuts import render
 from django.http import HttpResponse
+from .forms import NameForm 
 
 # Create your views here.
-def printName(request):
+def contact(request):
     if request.method=="POST":
-        name = request.POST.get("name")
-        context = {
-            "name": name
-        }
-        return render(request,'printName.html',context)
+        form=NameForm(request.POST)
+        if form.is_valid():
+            name=form.cleaned_data["name"]
+            email=form.cleaned_data["email"]
+            print(f"Name: {name}, Email: {email}")
+            return HttpResponse("Thank you for submitting your name and email!")
     else:
-        return render(request,'inputName.html')
+        form=NameForm()
+        return render(request,'contact.html',{"form":form})
